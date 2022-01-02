@@ -1,38 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+background-color: #353840;
+height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  background-color: #04111D;
+  height: 60px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#web-name {
+  color:white;
+  margin-left: 10px;
+}
+
+.search-bar {
+  background-color: #353840;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  height: 60%;
+  margin-left:20px;
+}
+
+.nav-choices {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.wallet {
+  margin-right: 10px;
+}
+
+ .nav-explore{
+  color:#fff;
+}
+
+.person-icon {
+  color: #8A939B;
+}
+
+.ham {
+  display: none;
+  color:white;
+}
+
+@media only screen and (max-width: 1000px) {
+.search-bar {
+  width: 70%;
+  margin-right: 10px;
+}
+
+.nav-choices {
+  display: none;
+  
+}
+.ham {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.open {
+  font-size: large;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+.nav {
+  height: 80px;
+}  
+
+
+.open {
+  font-size: 30px;
+}
+
+.nav-icons{
+  display: none;
+}
+
+.search-bar {
+  display: none;
+}
+
+
 }
